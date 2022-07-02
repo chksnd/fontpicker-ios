@@ -1,8 +1,8 @@
 # System Font Picker for iOS
 
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/FontPicker.svg?style=flat-square)](https://cocoapods.org/pods/FontPicker)
-[![Platform](https://img.shields.io/cocoapods/p/FontPicker.svg?style=flat-square)](https://github.com/unsplash/unsplash-photopicker-ios)
-[![License](https://img.shields.io/github/license/chksnd/fontpicker-ios.svg?style=flat-square)](https://github.com/unsplash/unsplash-photopicker-ios)
+[![Platform](https://img.shields.io/cocoapods/p/FontPicker.svg?style=flat-square)](https://github.com/chksnd/fontpicker-ios)
+[![License](https://img.shields.io/github/license/chksnd/fontpicker-ios.svg?style=flat-square)](https://github.com/chksnd/fontpicker-ios)
 
 FontPicker is an iOS UI component that allows you to quickly search the system fonts with just a few lines of code.
 
