@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00F5DB7E3676C430D8167252 /* Pods_FontPickerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9ECCC30537ABAFEA58B1B17 /* Pods_FontPickerDemo.framework */; };
+		B8BCD635F296F588E112C5F6 /* Pods_FontPicker_FontPickerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3C3882A33C7EACE833D417 /* Pods_FontPicker_FontPickerTests.framework */; };
+		BF0A151C2870D1560025DE12 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF0A151F2870D1560025DE12 /* Localizable.strings */; };
+		BF0A151D2870D1560025DE12 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF0A151F2870D1560025DE12 /* Localizable.strings */; };
+		BF0A15212870DCAC0025DE12 /* Pods_FontPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E70F39D71EF65285502A4AF /* Pods_FontPicker.framework */; };
+		BF3746B8286E74DC00BBDF17 /* FontPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3746AD286E74DC00BBDF17 /* FontPicker.framework */; };
+		BF3746BD286E74DC00BBDF17 /* FontPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3746BC286E74DC00BBDF17 /* FontPickerTests.swift */; };
+		BF3746BE286E74DC00BBDF17 /* FontPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3746B0286E74DC00BBDF17 /* FontPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF3746CE286E750500BBDF17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3746CD286E750500BBDF17 /* AppDelegate.swift */; };
+		BF3746D2286E750500BBDF17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3746D1286E750500BBDF17 /* ViewController.swift */; };
+		BF3746D5286E750500BBDF17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3746D3286E750500BBDF17 /* Main.storyboard */; };
+		BF3746D7286E750600BBDF17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3746D6286E750600BBDF17 /* Assets.xcassets */; };
+		BF3746DA286E750600BBDF17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3746D8286E750600BBDF17 /* LaunchScreen.storyboard */; };
+		BF3746E4286E763E00BBDF17 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3746E3286E763E00BBDF17 /* Configuration.swift */; };
+		BF3746E5286E764500BBDF17 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3746E3286E763E00BBDF17 /* Configuration.swift */; };
+		BF3746E8286E76BE00BBDF17 /* FontPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3746E7286E76BE00BBDF17 /* FontPicker.swift */; };
+		BF3746E9286E76BE00BBDF17 /* FontPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3746E7286E76BE00BBDF17 /* FontPicker.swift */; };
+		BF3746EF286E76EC00BBDF17 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3746EE286E76EC00BBDF17 /* EmptyView.swift */; };
+		BF3746F0286E76EC00BBDF17 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3746EE286E76EC00BBDF17 /* EmptyView.swift */; };
+		BF3746F2286E772300BBDF17 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3746F1286E772300BBDF17 /* TableCell.swift */; };
+		BF3746F3286E772300BBDF17 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3746F1286E772300BBDF17 /* TableCell.swift */; };
+		BF3746F5286E773E00BBDF17 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3746F4286E773E00BBDF17 /* String+Localization.swift */; };
+		BF3746F6286E773E00BBDF17 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3746F4286E773E00BBDF17 /* String+Localization.swift */; };
+		BF3746F8286E775C00BBDF17 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3746F7286E775C00BBDF17 /* Bundle+Extensions.swift */; };
+		BF3746F9286E775C00BBDF17 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3746F7286E775C00BBDF17 /* Bundle+Extensions.swift */; };
+		BF3746FE286E77B500BBDF17 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3746FD286E77B500BBDF17 /* DataSource.swift */; };
+		BF3746FF286E77B500BBDF17 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3746FD286E77B500BBDF17 /* DataSource.swift */; };
+		BF374701286E786600BBDF17 /* FontSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF374700286E786600BBDF17 /* FontSearchController.swift */; };
+		BF374702286E786600BBDF17 /* FontSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF374700286E786600BBDF17 /* FontSearchController.swift */; };
+		BF374704286E78C000BBDF17 /* FontPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF374703286E78C000BBDF17 /* FontPickerViewController.swift */; };
+		BF374705286E78C000BBDF17 /* FontPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF374703286E78C000BBDF17 /* FontPickerViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF3746B9286E74DC00BBDF17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF3746A4286E74DC00BBDF17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF3746AC286E74DC00BBDF17;
+			remoteInfo = FontPicker;
+		};
+		BF3746DF286E751100BBDF17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF3746A4286E74DC00BBDF17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF3746CA286E750500BBDF17;
+			remoteInfo = FontPickerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E38D38052CA90692A120F2A /* Pods-FontPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontPicker.debug.xcconfig"; path = "Target Support Files/Pods-FontPicker/Pods-FontPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		2038BFA86199B97E3D32905E /* Pods-FontPicker-FontPickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontPicker-FontPickerTests.release.xcconfig"; path = "Target Support Files/Pods-FontPicker-FontPickerTests/Pods-FontPicker-FontPickerTests.release.xcconfig"; sourceTree = "<group>"; };
+		8358EC45FF6C1B59E090E827 /* Pods-FontPickerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontPickerDemo.debug.xcconfig"; path = "Target Support Files/Pods-FontPickerDemo/Pods-FontPickerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8E3C3882A33C7EACE833D417 /* Pods_FontPicker_FontPickerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FontPicker_FontPickerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E70F39D71EF65285502A4AF /* Pods_FontPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FontPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3EC59AEA762FB2F402B84E /* Pods-FontPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontPicker.release.xcconfig"; path = "Target Support Files/Pods-FontPicker/Pods-FontPicker.release.xcconfig"; sourceTree = "<group>"; };
+		BF0A151E2870D1560025DE12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BF0A15202870D1D50025DE12 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BF3746AD286E74DC00BBDF17 /* FontPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF3746B0286E74DC00BBDF17 /* FontPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontPicker.h; sourceTree = "<group>"; };
+		BF3746B7286E74DC00BBDF17 /* FontPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF3746BC286E74DC00BBDF17 /* FontPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontPickerTests.swift; sourceTree = "<group>"; };
+		BF3746CB286E750500BBDF17 /* FontPickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontPickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF3746CD286E750500BBDF17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF3746D1286E750500BBDF17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF3746D4286E750500BBDF17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF3746D6286E750600BBDF17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF3746D9286E750600BBDF17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF3746DB286E750600BBDF17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF3746E3286E763E00BBDF17 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		BF3746E7286E76BE00BBDF17 /* FontPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontPicker.swift; sourceTree = "<group>"; };
+		BF3746EE286E76EC00BBDF17 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		BF3746F1286E772300BBDF17 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		BF3746F4286E773E00BBDF17 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		BF3746F7286E775C00BBDF17 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		BF3746FD286E77B500BBDF17 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		BF374700286E786600BBDF17 /* FontSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSearchController.swift; sourceTree = "<group>"; };
+		BF374703286E78C000BBDF17 /* FontPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontPickerViewController.swift; sourceTree = "<group>"; };
+		BFCAD99EA75914A605854368 /* Pods-FontPicker-FontPickerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontPicker-FontPickerTests.debug.xcconfig"; path = "Target Support Files/Pods-FontPicker-FontPickerTests/Pods-FontPicker-FontPickerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9ECCC30537ABAFEA58B1B17 /* Pods_FontPickerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FontPickerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99184912DCE724DBFCFEC7E /* Pods-FontPickerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontPickerDemo.release.xcconfig"; path = "Target Support Files/Pods-FontPickerDemo/Pods-FontPickerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E03AE0CEB143F56CB01B39B0 /* Pods-FontPicker-FontPickerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontPicker-FontPickerDemo.debug.xcconfig"; path = "Target Support Files/Pods-FontPicker-FontPickerDemo/Pods-FontPicker-FontPickerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FBBA3E833E70F3BEF6D680E7 /* Pods-FontPicker-FontPickerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontPicker-FontPickerDemo.release.xcconfig"; path = "Target Support Files/Pods-FontPicker-FontPickerDemo/Pods-FontPicker-FontPickerDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF3746AA286E74DC00BBDF17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0A15212870DCAC0025DE12 /* Pods_FontPicker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF3746B4286E74DC00BBDF17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF3746B8286E74DC00BBDF17 /* FontPicker.framework in Frameworks */,
+				B8BCD635F296F588E112C5F6 /* Pods_FontPicker_FontPickerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF3746C8286E750500BBDF17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00F5DB7E3676C430D8167252 /* Pods_FontPickerDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34D5F457634AC671FDD33843 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E38D38052CA90692A120F2A /* Pods-FontPicker.debug.xcconfig */,
+				AD3EC59AEA762FB2F402B84E /* Pods-FontPicker.release.xcconfig */,
+				BFCAD99EA75914A605854368 /* Pods-FontPicker-FontPickerTests.debug.xcconfig */,
+				2038BFA86199B97E3D32905E /* Pods-FontPicker-FontPickerTests.release.xcconfig */,
+				8358EC45FF6C1B59E090E827 /* Pods-FontPickerDemo.debug.xcconfig */,
+				D99184912DCE724DBFCFEC7E /* Pods-FontPickerDemo.release.xcconfig */,
+				E03AE0CEB143F56CB01B39B0 /* Pods-FontPicker-FontPickerDemo.debug.xcconfig */,
+				FBBA3E833E70F3BEF6D680E7 /* Pods-FontPicker-FontPickerDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		77B723AB3951C6A3495E8710 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E70F39D71EF65285502A4AF /* Pods_FontPicker.framework */,
+				8E3C3882A33C7EACE833D417 /* Pods_FontPicker_FontPickerTests.framework */,
+				C9ECCC30537ABAFEA58B1B17 /* Pods_FontPickerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF3746A3286E74DC00BBDF17 = {
+			isa = PBXGroup;
+			children = (
+				BF3746AF286E74DC00BBDF17 /* FontPicker */,
+				BF3746BB286E74DC00BBDF17 /* FontPickerTests */,
+				BF3746CC286E750500BBDF17 /* FontPickerDemo */,
+				BF3746AE286E74DC00BBDF17 /* Products */,
+				34D5F457634AC671FDD33843 /* Pods */,
+				77B723AB3951C6A3495E8710 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF3746AE286E74DC00BBDF17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF3746AD286E74DC00BBDF17 /* FontPicker.framework */,
+				BF3746B7286E74DC00BBDF17 /* FontPickerTests.xctest */,
+				BF3746CB286E750500BBDF17 /* FontPickerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF3746AF286E74DC00BBDF17 /* FontPicker */ = {
+			isa = PBXGroup;
+			children = (
+				BF3746E2286E762700BBDF17 /* Resources */,
+				BF3746E1286E762000BBDF17 /* Classes */,
+				BF3746B0286E74DC00BBDF17 /* FontPicker.h */,
+			);
+			path = FontPicker;
+			sourceTree = "<group>";
+		};
+		BF3746BB286E74DC00BBDF17 /* FontPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF3746BC286E74DC00BBDF17 /* FontPickerTests.swift */,
+			);
+			path = FontPickerTests;
+			sourceTree = "<group>";
+		};
+		BF3746CC286E750500BBDF17 /* FontPickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BF3746CD286E750500BBDF17 /* AppDelegate.swift */,
+				BF3746D1286E750500BBDF17 /* ViewController.swift */,
+				BF3746D3286E750500BBDF17 /* Main.storyboard */,
+				BF3746D8286E750600BBDF17 /* LaunchScreen.storyboard */,
+				BF3746D6286E750600BBDF17 /* Assets.xcassets */,
+				BF3746DB286E750600BBDF17 /* Info.plist */,
+			);
+			path = FontPickerDemo;
+			sourceTree = "<group>";
+		};
+		BF3746E1286E762000BBDF17 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BF3746E3286E763E00BBDF17 /* Configuration.swift */,
+				BF3746E6286E76A800BBDF17 /* Controllers */,
+				BF3746ED286E76D900BBDF17 /* Services */,
+				BF3746EB286E76CF00BBDF17 /* Utils */,
+				BF3746EA286E76CA00BBDF17 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BF3746E2286E762700BBDF17 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF0A151F2870D1560025DE12 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF3746E6286E76A800BBDF17 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF3746E7286E76BE00BBDF17 /* FontPicker.swift */,
+				BF374703286E78C000BBDF17 /* FontPickerViewController.swift */,
+				BF374700286E786600BBDF17 /* FontSearchController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BF3746EA286E76CA00BBDF17 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF3746EE286E76EC00BBDF17 /* EmptyView.swift */,
+				BF3746F1286E772300BBDF17 /* TableCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF3746EB286E76CF00BBDF17 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BF3746F4286E773E00BBDF17 /* String+Localization.swift */,
+				BF3746F7286E775C00BBDF17 /* Bundle+Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BF3746ED286E76D900BBDF17 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BF3746FD286E77B500BBDF17 /* DataSource.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BF3746A8286E74DC00BBDF17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF3746BE286E74DC00BBDF17 /* FontPicker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BF3746AC286E74DC00BBDF17 /* FontPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF3746C1286E74DC00BBDF17 /* Build configuration list for PBXNativeTarget "FontPicker" */;
+			buildPhases = (
+				DC0EE46992E75E22FA2C43A8 /* [CP] Check Pods Manifest.lock */,
+				BF3746A8286E74DC00BBDF17 /* Headers */,
+				BF3746A9286E74DC00BBDF17 /* Sources */,
+				BF3746AA286E74DC00BBDF17 /* Frameworks */,
+				BF3746AB286E74DC00BBDF17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FontPicker;
+			productName = FontPicker;
+			productReference = BF3746AD286E74DC00BBDF17 /* FontPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BF3746B6286E74DC00BBDF17 /* FontPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF3746C4286E74DC00BBDF17 /* Build configuration list for PBXNativeTarget "FontPickerTests" */;
+			buildPhases = (
+				466AE24E060BC5749E19131D /* [CP] Check Pods Manifest.lock */,
+				BF3746B3286E74DC00BBDF17 /* Sources */,
+				BF3746B4286E74DC00BBDF17 /* Frameworks */,
+				BF3746B5286E74DC00BBDF17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF3746BA286E74DC00BBDF17 /* PBXTargetDependency */,
+				BF3746E0286E751100BBDF17 /* PBXTargetDependency */,
+			);
+			name = FontPickerTests;
+			productName = FontPickerTests;
+			productReference = BF3746B7286E74DC00BBDF17 /* FontPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF3746CA286E750500BBDF17 /* FontPickerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF3746DC286E750600BBDF17 /* Build configuration list for PBXNativeTarget "FontPickerDemo" */;
+			buildPhases = (
+				D977096563DDD4DEF8C9C599 /* [CP] Check Pods Manifest.lock */,
+				BF3746C7286E750500BBDF17 /* Sources */,
+				BF3746C8286E750500BBDF17 /* Frameworks */,
+				BF3746C9286E750500BBDF17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FontPickerDemo;
+			productName = FontPickerDemo;
+			productReference = BF3746CB286E750500BBDF17 /* FontPickerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF3746A4286E74DC00BBDF17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					BF3746AC286E74DC00BBDF17 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					BF3746B6286E74DC00BBDF17 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BF3746CA286E750500BBDF17;
+					};
+					BF3746CA286E750500BBDF17 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = BF3746A7286E74DC00BBDF17 /* Build configuration list for PBXProject "FontPicker" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = BF3746A3286E74DC00BBDF17;
+			productRefGroup = BF3746AE286E74DC00BBDF17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF3746AC286E74DC00BBDF17 /* FontPicker */,
+				BF3746B6286E74DC00BBDF17 /* FontPickerTests */,
+				BF3746CA286E750500BBDF17 /* FontPickerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF3746AB286E74DC00BBDF17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0A151C2870D1560025DE12 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF3746B5286E74DC00BBDF17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0A151D2870D1560025DE12 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF3746C9286E750500BBDF17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF3746DA286E750600BBDF17 /* LaunchScreen.storyboard in Resources */,
+				BF3746D7286E750600BBDF17 /* Assets.xcassets in Resources */,
+				BF3746D5286E750500BBDF17 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		466AE24E060BC5749E19131D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FontPicker-FontPickerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D977096563DDD4DEF8C9C599 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FontPickerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC0EE46992E75E22FA2C43A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FontPicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF3746A9286E74DC00BBDF17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF3746F2286E772300BBDF17 /* TableCell.swift in Sources */,
+				BF3746EF286E76EC00BBDF17 /* EmptyView.swift in Sources */,
+				BF3746E4286E763E00BBDF17 /* Configuration.swift in Sources */,
+				BF3746F5286E773E00BBDF17 /* String+Localization.swift in Sources */,
+				BF374701286E786600BBDF17 /* FontSearchController.swift in Sources */,
+				BF374704286E78C000BBDF17 /* FontPickerViewController.swift in Sources */,
+				BF3746E8286E76BE00BBDF17 /* FontPicker.swift in Sources */,
+				BF3746FE286E77B500BBDF17 /* DataSource.swift in Sources */,
+				BF3746F8286E775C00BBDF17 /* Bundle+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF3746B3286E74DC00BBDF17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF3746F3286E772300BBDF17 /* TableCell.swift in Sources */,
+				BF3746F0286E76EC00BBDF17 /* EmptyView.swift in Sources */,
+				BF3746E5286E764500BBDF17 /* Configuration.swift in Sources */,
+				BF3746F6286E773E00BBDF17 /* String+Localization.swift in Sources */,
+				BF374702286E786600BBDF17 /* FontSearchController.swift in Sources */,
+				BF374705286E78C000BBDF17 /* FontPickerViewController.swift in Sources */,
+				BF3746BD286E74DC00BBDF17 /* FontPickerTests.swift in Sources */,
+				BF3746E9286E76BE00BBDF17 /* FontPicker.swift in Sources */,
+				BF3746FF286E77B500BBDF17 /* DataSource.swift in Sources */,
+				BF3746F9286E775C00BBDF17 /* Bundle+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF3746C7286E750500BBDF17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF3746D2286E750500BBDF17 /* ViewController.swift in Sources */,
+				BF3746CE286E750500BBDF17 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF3746BA286E74DC00BBDF17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF3746AC286E74DC00BBDF17 /* FontPicker */;
+			targetProxy = BF3746B9286E74DC00BBDF17 /* PBXContainerItemProxy */;
+		};
+		BF3746E0286E751100BBDF17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF3746CA286E750500BBDF17 /* FontPickerDemo */;
+			targetProxy = BF3746DF286E751100BBDF17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF0A151F2870D1560025DE12 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF0A151E2870D1560025DE12 /* en */,
+				BF0A15202870D1D50025DE12 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		BF3746D3286E750500BBDF17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF3746D4286E750500BBDF17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF3746D8286E750600BBDF17 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF3746D9286E750600BBDF17 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF3746BF286E74DC00BBDF17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF3746C0286E74DC00BBDF17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BF3746C2286E74DC00BBDF17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E38D38052CA90692A120F2A /* Pods-FontPicker.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A65TB9AV9Z;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chksnd.FontPicker;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF3746C3286E74DC00BBDF17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD3EC59AEA762FB2F402B84E /* Pods-FontPicker.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A65TB9AV9Z;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chksnd.FontPicker;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF3746C5286E74DC00BBDF17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFCAD99EA75914A605854368 /* Pods-FontPicker-FontPickerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A65TB9AV9Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chksnd.FontPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FontPickerDemo.app/FontPickerDemo";
+			};
+			name = Debug;
+		};
+		BF3746C6286E74DC00BBDF17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2038BFA86199B97E3D32905E /* Pods-FontPicker-FontPickerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A65TB9AV9Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chksnd.FontPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FontPickerDemo.app/FontPickerDemo";
+			};
+			name = Release;
+		};
+		BF3746DD286E750600BBDF17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8358EC45FF6C1B59E090E827 /* Pods-FontPickerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A65TB9AV9Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FontPickerDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chksnd.FontPickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF3746DE286E750600BBDF17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D99184912DCE724DBFCFEC7E /* Pods-FontPickerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A65TB9AV9Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FontPickerDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chksnd.FontPickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF3746A7286E74DC00BBDF17 /* Build configuration list for PBXProject "FontPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF3746BF286E74DC00BBDF17 /* Debug */,
+				BF3746C0286E74DC00BBDF17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF3746C1286E74DC00BBDF17 /* Build configuration list for PBXNativeTarget "FontPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF3746C2286E74DC00BBDF17 /* Debug */,
+				BF3746C3286E74DC00BBDF17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF3746C4286E74DC00BBDF17 /* Build configuration list for PBXNativeTarget "FontPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF3746C5286E74DC00BBDF17 /* Debug */,
+				BF3746C6286E74DC00BBDF17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF3746DC286E750600BBDF17 /* Build configuration list for PBXNativeTarget "FontPickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF3746DD286E750600BBDF17 /* Debug */,
+				BF3746DE286E750600BBDF17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF3746A4286E74DC00BBDF17 /* Project object */;
+}

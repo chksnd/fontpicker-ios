@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  FontPicker
+
+  Created by Aibek Mazhitov on 02.07.22.
+  
+*/
+
+"search.title" = "Шрифты";
+"search.placeholder" = "Поиск системных шрифтов";
+
+"error.noResults.title" = "Никаких результатов";
+"error.noResults.description" = "Пожалуйста, обновите поиск и попробуйте снова.";
+
+"cell.placeholder" = "Почти не успели мы опомниться, как покинули землю.";
