@@ -10,5 +10,5 @@ Pod::Spec.new do |spec|
   spec.exclude_files  = "FontPickerDemo"
   spec.frameworks     = "Foundation", "UIKit"
   spec.requires_arc   = true
-  spec.swift_version  = "5.3"
+  spec.swift_version  = "5.6.1"
 end
