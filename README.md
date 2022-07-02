@@ -8,7 +8,6 @@ FontPicker is an iOS UI component that allows you to quickly search the system f
 
 ![Font Picker for iOS preview](https://i.imgur.com/5IQzAzz.png "Font Picker for iOS")
 
-## Table of Contents
 ## Description
 
 FontPicker is a view controller. You present it to offer your users to select one system font. Once they have selected font, the view controller returns the font name as a `String` object that you can use in your app.
@@ -31,7 +30,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'FontPicker', '~> 1.0.1'
+    pod 'FontPicker', '~> 1.0'
 end
 ```
 
