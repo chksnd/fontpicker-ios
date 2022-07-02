@@ -44,8 +44,8 @@ Then run `pod install`.
 
 ```swift
 protocol FontPickerDelegate: class {
-  func fontPicker(_ photoPicker: FontPicker, didSelectFont fontName: String)
-  func fontPickerDidCancel(_ photoPicker: FontPicker)
+  func fontPicker(_ fontPicker: FontPicker, didSelectFont fontName: String)
+  func fontPickerDidCancel(_ fontPicker: FontPicker)
 }
 ```
 
