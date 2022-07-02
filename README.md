@@ -6,7 +6,7 @@
 
 FontPicker is an iOS UI component that allows you to quickly search the system fonts with just a few lines of code.
 
-![Image]()
+![Font Picker for iOS preview](https://imgur.com/a/EJ1rJUc "Font Picker for iOS")
 
 ## Table of Contents
 ## Description
